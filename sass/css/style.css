@@ -1,0 +1,11 @@
+h1,
+p {
+  color: #5ec124; }
+
+div ul li {
+  list-style: none;
+  color: #901ed5;
+  display: inline-block; }
+  div ul li a {
+    color: #901ed5;
+    text-decoration: none; }

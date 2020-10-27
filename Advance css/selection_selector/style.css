@@ -1,0 +1,18 @@
+::selection{
+	background: yellow;
+	color: grey;
+}
+
+/*Only 4 things we can use in selection operator 
+
+
+	1.Background
+	2.Color
+	3.Outline
+	4.inline
+	*/
+
+.par::selection{
+	background: red;
+	color: green;
+}

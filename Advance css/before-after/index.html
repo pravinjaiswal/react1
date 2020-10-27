@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Before After</title>
+	<meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Grenze+Gotisch:wght@500&display=swap" rel="stylesheet">
+	<style type="text/css">
+		*{ margin: 0;
+		   padding: 0;
+		   box-sizing: border-box;
+		   font-family: 'Grenze Gotisch', cursive;
+		    }
+
+
+		    :root{
+		    	--b-a-width:30vh;
+		    	--b-a-md-width:35vh;
+		    	--b-a-sm-width:40vh;
+		    }
+
+		    .main_div{
+		    	background:#3498db;
+		    	width: 100vw;
+		    	height: 100vh; 
+		    	display: flex;
+		    	justify-content: center;
+		    	align-items: center;
+		    	text-align: center;
+		    }
+
+		    h1{
+		    	 color: #fff;
+		    	 text-shadow: 0 2px 5px rgba(0,0,0,0.5);
+		
+		    	 font-size: 45px;
+		    	 position: relative;
+
+		    }
+
+		    h1::before{
+		    	content: "";
+		    	position: absolute;
+		    	top: 5%;
+		    	left: 50%;
+		    	transform: translateX(-50%);
+		    	width: var(--b-a-width);
+		    	border-bottom: 7px solid #2c3e50;
+
+		    }
+
+		     h1::after{
+		    	content: "";
+		    	position: absolute;
+		    	width: var(--b-a-width);
+		    	left: 50%;
+		    	bottom:-10%;
+		    	transform: translateX(-50%);
+		    	border-bottom: 7px solid #2c3e50;
+		    	
+		    }
+
+
+		    @media(max-width: 768px){
+
+		    	 h1::before{
+		    	width: var(--b-a-sm-width);
+		    }
+		    	 h1::after{
+		    	width: var(--b-a-sm-width);
+		    }
+
+		  /*  ::selection{
+		    	background: yellow;
+		    	color:grey;
+		    }*/
+	</style>
+</head>
+<body>
+	<div class="main_div">
+		<h1>Pravin Technical</h1>
+	</div>
+</body>
+</html>

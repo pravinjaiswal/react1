@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Ways of Div</title>
+	<style type="text/css">
+		{
+
+			margin: 0;
+			padding:0;
+			box-sizing: border-box; 
+
+		}
+
+		.parent{
+			width: 100vw; /*viewport width*/
+			height: 100vh; /*viewport height*/
+			background:#2980b9;
+
+
+			display: grid;
+			place-items:center;
+			
+			/*??????????????????????????/=--------------------2 way---------------------*/
+
+			/*display: flex;
+			justify-content: center;
+			align-items: center;*/
+			/*position: relative; */
+		}
+
+		.child{
+			width: 60vw;
+			height: 60vh;
+			background:#1abc9c;
+			/*position: absolute;
+			top:50%;
+			left: 50%;
+			transform: translate(-50%,-50%);*/
+		}
+	</style>
+</head>
+<body>
+	<div class="parent">
+		<div class="child">
+			 <h1 style="text-align: center;" >Welcome to Pravin's channel</h1>
+		</div>
+	</div>
+
+</body>
+</html>

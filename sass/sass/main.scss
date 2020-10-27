@@ -1,0 +1,20 @@
+$color-blue: #5ec124;
+$color-menu: #901ed5;
+h1,
+p {
+  color: $color-blue;
+}
+
+div {
+  ul {
+    li {
+      list-style: none;
+      color: $color-menu;
+      display: inline-block;
+      a {
+        color: $color-menu;
+        text-decoration: none;
+      }
+    }
+  }
+}

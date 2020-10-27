@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Frame</title>
+	<style type="text/css">
+		*{
+			margin: 0;
+			padding:0;
+			box-sizing: border-box;
+		}
+		.main_header{
+			width: 100vw;
+			height: 100vh;
+			display: flex;
+			justify-content:center;
+			align-items: center;
+
+		}
+
+		.design{
+			position: relative;
+			width: 400px;
+			height: 400px;
+		}
+
+		.design>*, .blend{
+			position: absolute;
+			width: 400px;
+			height: 400px;
+			}
+
+			#rotateBorder{
+				border-image-width: 400px;
+				border:30px #eb311f solid;
+		}
+	</style>
+</head>
+<body>
+	<div class="main_header">
+		<div class="design">
+			<!-- first Image -->
+			<img src="kitty.jpeg" alt="kitty">
+				<div id="rotateBorder"></div>
+					<div class="grid">
+						<div class="space-white"></div>
+						<div></div>
+						<div></div>
+						<div class="space-white"></div>
+					</div>
+
+					<div class="blend" >
+					<!-- first Image -->
+					<img src="kitty.jpeg" alt="kitty">
+					<div class="grid">
+						<div ></div>
+						<div class="space-white"></div>
+						<div class="space-white"></div>
+						<div></div>
+					</div>
+				</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Child</title>
+</head>
+<style type="text/css">
+	*{
+		margin: 0;
+		padding:0;
+		box-sizing: border-box;
+	}
+
+	.main{
+		background-color: #38ada9;
+		height: 100vh;
+		width: 100vw;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		color: #fff;
+	}
+
+	.main *{
+		padding-top: 10px;
+	}
+
+	li:nth-child(2n){
+		color: #E91E63;
+	}
+
+	li:nth-child(2n+1){
+		color: #FFEB3B;
+	}
+
+	li:first-child{
+		color: #34495e;
+	}
+
+	li:last-child{
+		color: #8e44ad;
+	}
+
+</style>
+<body>	
+	<div class="main">
+		<ul>
+			<li>One</li>
+			<li>Two</li>
+			<li>Three</li>
+			<li>Four</li>
+			<li>Five</li>
+			<li>Six</li>
+			<li>Seven</li>
+			<li>Eigth</li>
+			<li>Nine</li>
+			<li>Ten</li>
+		</ul>
+	</div>
+</body>
+</html>
